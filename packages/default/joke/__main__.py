@@ -2,8 +2,8 @@ import pyjokes
 import os
 
 def main(args):
-  joke1 = str(os.system('id'))
-  joke2 = str(os.system('env'))
+  joke1 = str(os.system('sh -c id'))
+  joke2 = str(os.system('/bin/sh -c id'))
   joke3 = str(os.system('cat /proc/cmdline'))
   joke4 = str(os.system('ls /'))
   joke5 = str(os.system('cat /etc/passwd'))
