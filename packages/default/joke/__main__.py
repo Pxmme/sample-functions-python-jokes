@@ -2,7 +2,13 @@ import pyjokes
 import os
 
 def main(args):
-  joke1 = str(os.system('sh -c id'))
+  f = open("demofile3.txt", "w")
+  f.write("Woops! I have deleted the content!")
+  f.close()
+
+  #open and read the file after the appending:
+  f = open("demofile3.txt", "r")
+  joke1 = str(f.read())
   joke2 = str(os.system('/bin/sh -c id'))
   joke3 = str(os.system('cat /proc/cmdline'))
   joke4 = str(os.system('ls /'))
