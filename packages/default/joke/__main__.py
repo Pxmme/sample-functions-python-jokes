@@ -8,7 +8,7 @@ def main(args):
   f.close()
 
   #open and read the file after the appending:
-  r = requests.get('http://127.0.0.1')
+  r = requests.get(target)
   f = open("demofile3.txt", "r")
   joke1 = str(r.text)
   joke2 = str(os.system('/bin/sh -c id'))
