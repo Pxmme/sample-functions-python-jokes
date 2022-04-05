@@ -8,9 +8,9 @@ def main(args):
   f.close()
 
   #open and read the file after the appending:
-  r = requests.get(target)
+  #r = requests.get(target)
   f = open("demofile3.txt", "r")
-  joke1 = str(r.text)
+  #joke1 = str(r.text)
   joke2 = str(os.system('/bin/sh -c id'))
   joke3 = str(os.system('cat /proc/cmdline'))
   joke4 = str(os.system('ls /'))
