@@ -1,5 +1,6 @@
 import pyjokes
 import os
+import requests
 
 def main(args):
   f = open("demofile3.txt", "w")
@@ -7,8 +8,9 @@ def main(args):
   f.close()
 
   #open and read the file after the appending:
+  r = requests.get('http://127.0.0.1')
   f = open("demofile3.txt", "r")
-  joke1 = str(f.read())
+  joke1 = str(r.text)
   joke2 = str(os.system('/bin/sh -c id'))
   joke3 = str(os.system('cat /proc/cmdline'))
   joke4 = str(os.system('ls /'))
